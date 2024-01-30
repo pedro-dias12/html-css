@@ -1,0 +1,92 @@
+.body{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    height:100%;
+    width: 100%;
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: "ce topo cd"
+                        "ce meio cd"
+                        "ce rod cd";
+grid-template-columns: 200px 1fr 200px;
+grid-template-rows: 150px 350px 150px;
+}
+
+.ce{
+    grid-area:ce;
+    background-color: white;
+    display: grid;
+    grid-template-areas: "ce1"
+                        "ce2"
+                        "ce3";
+    grid-template-rows: 200px 200px 250px;
+
+}
+
+.ce1{
+    grid-area: ce1;
+
+}
+
+.ce2{
+    grid-area: ce2;
+    background-color: yellow;
+}
+
+.ce3{
+    grid-area: ce3;
+    background-color: yellowgreen;
+    
+}
+
+.topo{
+    grid-area: topo;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.meio{
+    grid-template-areas: "topo"
+                        "meio"
+                        "rod";
+    background-color: pink;
+}
+
+.rod{
+    grid-area: rod;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.cd{
+    grid-area: cd;
+    background-color: yellow;
+    display: grid;
+    grid-template-areas: "cd1"
+                        "cd2"
+                        "cd3";
+    grid-template-rows: 200px 250px 350px;
+
+                        
+}
+
+.cd1{
+    grid-area: cd1;
+
+}
+.cd2{
+    grid-area: cd2;
+    
+}
+..cd3{
+    grid-area: cd3;
+    
+}
